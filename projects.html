@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projects - Michael Hu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="website">
+      <nav>
+
+        <div class="logo">
+          <h1><a href="index.html">Michael Hu</a></h1>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="current" href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+      </nav>
+
+      <script src="app.js"></script>
+
+      <div class="proj_body">
+        
+        <div id="top" class="main_proj" >
+          <div class="parallax">
+            <p  class="projects_title">Projects</p>
+
+          </div>
+
+          <div class="year_links">
+            <ul class="years">
+              <li> <a href="#2020"> 2020 </a> </li>
+              <li> <a href="#2019"> 2019 </a> </li>
+              <li> <a href="#2018"> 2018 </a> </li>
+            </ul>
+          </div>
+
+          <div class="parallax" style="height: 50px !important"></div>
+
+          <!--Wooden Perpetual Calendar -->
+          <div id = "2020" class="perp_cal">
+            <video onloadstart="this.volume=0.5" id="perp_cal_video" src="res/model_perp_cal_anim.mp4" height="100%" width="50%" align="center" controls>
+            </video>
+            <div class="cal_info"; style = "width: 40%">
+              <div class="cal_header"; align=center>
+                <p style = "font-size: 50px; font-weight: bold">Modeled in Inventor: Wooden Perpetual Calendar</p>
+              </div>
+              <div class="cal_descrip">
+                <p style="font-family: 'Roboto'; text-align:center;font-size:20px; font-weight: lighter">Video animation of my team's Autodesk Inventor-modeled Wooden Perpetual Calendar based on <a href="https://www.amazon.com/ROKR-Perpetual-Mechanical-Engineering-Supplies-Great/dp/B07HDKYCWY/ref=ice_ac_b_dpb?crid=PA71DOSVLBYL&keywords=wooden+perpetual+calendar&qid=1583619860&sprefix=wooden+per%2Caps%2C180&sr=8-1" target="_blank" >ROKR's Wooden Perpetual Calendar</a>.
+                  Full details for this project can be found on <a href="https://illinois.digication.com/michael-hu-portfolio/home-1" target="_blank">the project website</a>.
+                </p>
+                <p style="text-align: center; padding-top: 5%; font-size: 20px">May 2020</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="parallax"></div>
+
+          <div id = "2019" class="nat_selection_sim">
+            <div class="nat_sim_info" style = "width: 40%">
+              <div class="nat_sim_header"; align = center>
+                <p style = "font-size: 50px; font-weight: bold">Mister Apps: Natural Selection Simulation</p>
+              </div>
+
+              <div class="nat_sim_descrip">
+                <p style="font-family: 'Roboto'; text-align:center;font-size:20px; font-weight: lighter">Developed and published an android app to the <a href="https://play.google.com/store/apps/details?id=com.misterapps.naturalselection&hl=en_US">Google Play Store</a> using Android Studio that implements a simple machine learning genetic algorithm.
+                </p>
+                <p style="text-align: center; padding-top: 5%; font-size: 20px">June 2019</p>
+              </div>
+            </div>
+
+            <iframe width="50%" height="400px" src="https://www.youtube.com/embed/iwAXLbkNvnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="parallax"></div>
+
+        <div class="jump">
+          <a href="#top">Back to Top</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,422 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/*Handles navigation bar*/
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 9vh;
+  background: rgb(112,146,255,1);
+  /*linear-gradient(90deg, rgba(0,185,255,1) 0%, rgba(81,0,255,1) 100%);*/
+
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;/*
+  overflow: hidden;*/
+}
+
+nav li a {
+  color: white;
+}
+
+.logo a {
+  letter-spacing: 1px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Archivo', sans-serif;
+}
+
+.nav-links .current {
+  background-color: white;
+  border-radius: 4px;
+  border-width: thick;
+  padding: 10px;
+  color: rgb(94, 135, 255);
+}
+
+.nav-links a:hover {
+  background-color: white;
+  border-radius: 4px;
+  border-width: thick;
+  padding: 10px;
+  color: rgb(94, 135, 255);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  font-size: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.website {
+  overflow-x: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+@media screen and (max-width:768px) {
+  nav {
+    background: rgb(94, 135, 255);
+  }
+
+  .nav-links {
+    position: fixed;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(94, 135, 255);
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 3.5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -3.5px);
+}
+
+/*Main Content Styling*/
+
+body{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: -2;
+}
+
+.main {
+  animation: fadeInAnimation 1s;
+  height: 41vh;
+}
+
+.main_proj {
+  margin-top: 9vh;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+/*Perpetual Calendar Content*/
+.perp_cal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.cal_header {
+  padding-bottom: 3%;
+}
+
+/*NaturalSelection Simulation Content*/
+.nat_selection_sim {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.nat_sim_header {
+  padding-bottom: 3%;
+}
+
+.parallax {
+  background: url('res/background.png') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150px;
+}
+
+.projects_title, .contact_title {
+  padding-top: 3%;
+  text-align:center;
+  font-size: 60px;
+  padding-bottom: 3%;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+/*Home Page Showcase*/
+
+.spacing {
+  height: 200px;
+  background-color: purple;
+}
+
+.expanding {
+  -webkit-transition: 0.3s;
+
+  display: inline-block;
+  flex: 1;
+  border-left: 10px solid rgb(94, 135, 255);/*rgb(56, 56, 56);*/
+  overflow: hidden;
+  opacity: 0.9;
+}
+
+.expanding:hover {
+  flex: 10;
+  opacity: 1;
+}
+
+/*Contact info sections*/
+.general {
+  font-size: 40px;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(94, 135, 255)
+  /*rgb(171, 143, 255);*/
+}
+
+/*.documents {
+  font-size: 40px;
+  color: rgb(232, 232, 232);
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(94, 135, 255);
+}*/
+
+.github {
+  font-size: 40px;
+  padding: 5px;
+  color: rgb(232, 232, 232);
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+/*Contact info text*/
+.general_text {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.contact_body {
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: 15vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.contact_text {
+  padding-left: 50px;
+  color: white;
+}
+
+.contact_text a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact_logo {
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+.showcase {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  position: relative;
+  z-index: -1;
+}
+
+/*Quick links for projects by year*/
+
+.year_links .years {
+  display: flex;
+  margin: auto;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 10px;
+  width: 50%;
+}
+
+.year_links .years a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 20px;
+  color: rgb(94, 135, 255,1);
+}
+
+/*Jump to Top Styling*/
+.jump {
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+}
+
+.jump a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: rgb(94, 135, 255,1);
+  font-weight: bold;
+}
+
+/*Front page image*/
+.cover_image {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+/*Filler space equal to height of nav bar*/
+.spacing_nav {
+  height: 9vh;
+  background-color: purple;
+}
+
+/*Contact information header styling*/
+.contact_info {
+  background-image: url('res/vector_background.jpg');
+  background-size: cover;
+  height: 41vh;
+  border-bottom: 10px solid rgb(94, 135, 255);
+  position: relative;
+  z-index: -1;
+}
+
+.contact_head {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*front page text*/
+.front_page_text {
+  position: absolute;
+  top: 20vh;
+  right: 10%;
+}
+
+.subtext_front {
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.intro_front {
+  font-size: 70px;
+}
+
+.front_text p {
+  text-align: right;
+  color: white;
+}
+
+/*attribute vector image*/
+.attribute {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  z-index: 0;
+}
+
+/*fixing z-index to allow for nav bar overlap (main page text)*/
+.main_page {
+  position: relative;
+  z-index: -1;
+}
+
+.proj_body {
+  position: relative;
+  z-index: -1;
+}
