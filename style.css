@@ -400,7 +400,7 @@ body{
   align-items: center;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-  height: 50vh;
+  height: 55vh;
 }
 
 .parallax {
@@ -413,11 +413,10 @@ body{
 .project_info {
   height: 100%;
   overflow: auto;
-  position: relative;
+  display: table;
 }
 
 .center {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  display: table-cell;
+  vertical-align: middle;
 }
