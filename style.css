@@ -181,38 +181,6 @@ body{
   }
 }
 
-/*Perpetual Calendar Content*/
-.perp_cal {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-.cal_header {
-  padding-bottom: 3%;
-}
-
-/*NaturalSelection Simulation Content*/
-.nat_selection_sim {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-
-.nat_sim_header {
-  padding-bottom: 3%;
-}
-
-.parallax {
-  background: url('res/background.png') no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 150px;
-}
 
 .projects_title, .contact_title {
   padding-top: 3%;
@@ -419,4 +387,37 @@ body{
 .proj_body {
   position: relative;
   z-index: -1;
+}
+
+/* Project Layout Content Styling */
+.project_header {
+  padding-bottom: 3vh;
+}
+
+.project_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  height: 50vh;
+}
+
+.parallax {
+  background: url('res/background.png') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 150px;
+}
+
+.project_info {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
