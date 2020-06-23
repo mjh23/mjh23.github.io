@@ -29,7 +29,7 @@ nav li a {
 
 .logo a {
   letter-spacing: 1px;
-  font-size: 35px;
+  font-size: 3vw;
   font-weight: bold;
   color: white;
   text-decoration: none;
@@ -64,7 +64,7 @@ p {
   display: flex;
   justify-content: space-between;
   width: 35%;
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .nav-links li {
@@ -115,6 +115,7 @@ p {
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    font-size: 20px;
   }
 
   .nav-links li {
@@ -184,10 +185,11 @@ body{
 
 .projects_title, .contact_title {
   padding-top: 3%;
-  text-align:center;
+  text-align: center;
   font-size: 6vw;
   padding-bottom: 3%;
   color: white;
+  height: 100%;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
 }
@@ -260,6 +262,7 @@ body{
 .contact_text {
   padding-left: 50px;
   color: white;
+  font-size: 3vw;
 }
 
 .contact_text a {
@@ -313,7 +316,7 @@ body{
 .jump a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 3vw;
   color: rgb(94, 135, 255,1);
   font-weight: bold;
 }
@@ -400,23 +403,36 @@ body{
   align-items: center;
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-  height: 55vh;
+  height: 25vw;
+  overflow: auto;
+}
+
+.project_descrip {
 }
 
 .parallax {
   background: url('res/background.png') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
-  height: 150px;
+  height: 15vw;
 }
 
 .project_info {
   height: 100%;
   overflow: auto;
-  display: table;
 }
 
 .center {
   display: table-cell;
   vertical-align: middle;
+}
+
+.table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.padding {
+  height: 100%;
 }
