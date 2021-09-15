@@ -328,7 +328,7 @@ body{
 
 /*Front page image*/
 .cover_image {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: 100vh;
   transform: scaleX(-1);
